@@ -1,0 +1,11 @@
+name: "functional"
+author: "noomlib"
+
+version: "0.0.1"
+repository: "github://noomlib/noomlib-functional"
+
+projectBuilds: 
+	"noomlib/functional/exports": "noomlib_functional"
+
+Packager:
+	targetPlatform: "lua"

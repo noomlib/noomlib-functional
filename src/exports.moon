@@ -1,0 +1,52 @@
+array = dependency "noomlib/functional/array"
+map = dependency "noomlib/functional/map"
+std = dependency "noomlib/functional/std"
+
+with exports
+    with exports.array = {}
+        .all = array.all
+        .any = array.any
+        .allocate = array.allocate
+        .append = array.append
+        .clone = array.clone
+        .drop = array.drop
+        .each = array.each
+        .find = array.find
+        .find_index = array.find_index
+        .find_last = array.find_last
+        .find_last_index = array.find_last_index
+        .fill = array.fill
+        .filter = array.filter
+        .make_lookup = array.make_lookup
+        .map = array.map
+        .range = array.range
+        .reduce = array.reduce
+        .reject = array.reject
+        .slice = array.slice
+        .take = array.take
+
+    with exports.map = {}
+        .all = map.all
+        .any = map.any
+        .assign = map.assign
+        .clone = map.clone
+        .each = map.each
+        .filter = map.filter
+        .keys = map.keys
+        .make_lookup = map.make_lookup
+        .map = map.map
+        .pick = map.pick
+        .prop = map.prop
+        .prop_match = map.prop_match
+        .reject = map.reject
+        .values = map.values
+
+    with exports.std = {}
+        .bind = std.bind
+        .bind_n = std.bind_n
+        .constant = std.constant
+        .constant_n = std.constant_n
+        .identity = std.identity
+        .once = std.once
+        .of = std.of
+        .pack = std.pack
